@@ -1,0 +1,68 @@
+button {
+	overflow: hidden;
+	padding: 0.5rem 1.5rem;
+	box-shadow: $box-shadow;
+	border-radius: $button-border-radius;
+	margin: 0.25rem;
+	text-align: center;
+	cursor: pointer;
+}
+.btn-primary {
+	background-color: $primary;
+	border: 2px solid $primary-hvr;
+	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	&:hover {
+		background-color: $primary-hvr;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-secondary {
+	background-color: $secondary;
+	border: 2px solid $secondary-hvr;
+	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	&:hover {
+		background-color: $secondary-hvr;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-success {
+	background-color: $success;
+	border: 2px solid $success-hvr;
+	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	&:hover {
+		background-color: $success-hvr;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-danger {
+	background-color: $danger;
+	border: 2px solid $danger-hvr;
+	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	&:hover {
+		background-color: $danger-hvr;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-outline {
+	background-color: transparent;
+	border: 2px solid $dark-outline;
+	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-outline.dark {
+	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
+	&:hover {
+		background-color: $dark;
+		color: $light;
+	}
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$page-background: #fff;
+$font: 'Poppins', sans-serif;
+$font-weight-heading: 800;
+$box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+$button-border-radius: 0;
+
+// Colors
+$dark-green: #064635;
+$green: #519259;
+$yellow: #f0bb62;
+$light: #f4eea9;
+$primary: #44abdb;
+$primary-hvr: #4598be;
+$secondary: #cccccc;
+$secondary-hvr: #9e9a9a;
+$success: #519259;
+$success-hvr: #397940;
+$danger: #d84b32;
+$danger-hvr: #b84430;
+$dark-outline: #0a0a0a;
+$dark: #0a0a0a;
+$text-muted: #373737;
+$selection-color: rgba(26, 26, 36, 0.226);
+
+@import 'buttons', 'typo', 'cards', 'components';
+* {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	box-sizing: border-box;
+	font-family: $font;
+}
+body {
+	background-color: $page-background;
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: $light;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $yellow;
+		border-radius: 1rem;
+	}
+}
+::selection {
+	background-color: $selection-color;
+}

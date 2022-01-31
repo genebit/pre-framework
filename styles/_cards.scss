@@ -1,0 +1,78 @@
+.card-masonry {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: masonry;
+	.card {
+		// Override default card margin only on card masonry
+		margin: 1rem 0;
+	}
+	@media screen and (max-width: 720px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 500px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.card-deck {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1rem;
+	.card {
+		margin: 1rem 0;
+	}
+	// Override default card footer on card deck
+	.card-footer {
+		margin-top: 0.5rem;
+		padding: 1rem;
+		float: right;
+		@media screen and (max-width: 1100px) {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: column;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+		.card {
+			// Override default card footer on card deck
+			margin: 0;
+		}
+	}
+}
+.card {
+	position: relative;
+	overflow: hidden;
+	box-shadow: $box-shadow;
+	margin: 1rem 1rem;
+	outline: 2px solid $secondary;
+	.card-img {
+		display: block;
+		width: 100%;
+	}
+	.stripe {
+		position: absolute;
+		width: 7px;
+		height: 100%;
+		left: 0;
+		top: 0;
+		float: left;
+		background-color: $dark-green;
+	}
+	.card-body {
+		padding: 1rem;
+		flex: 1 1 auto;
+	}
+	.card-footer {
+		margin-top: 0.5rem;
+		padding: 1rem;
+		float: right;
+		@media screen and (max-width: 500px) {
+			width: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: column;
+		}
+	}
+}
