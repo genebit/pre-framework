@@ -1,0 +1,24 @@
+refactor and clean sass files
+create utilities sass
+	- positioning
+	- flex centering
+	- text colors
+	- spacer
+navbar
+dropdown buttons
+forms
+	- radios
+	- search bar
+	- password field
+	- text fields
+	- checkbox
+modals
+	- default 
+		- vertical align
+		- show to top
+		- popup?
+	- notification (settimeout function)
+carousel
+accordion
+
+
