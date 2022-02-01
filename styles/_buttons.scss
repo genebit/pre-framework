@@ -1,3 +1,8 @@
+$btn-outline-width: 0.13rem;
+$btn-transition-click-speed: 35ms;
+$btn-transition-hover-speed: 201ms;
+$button-border-radius: 0;
+
 button {
 	overflow: hidden;
 	padding: 0.5rem 1.5rem;
@@ -9,8 +14,8 @@ button {
 }
 .btn-primary {
 	background-color: $primary;
-	border: 2px solid $primary-hvr;
-	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	border: $btn-outline-width solid $primary-hvr;
+	transition: transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
 	&:hover {
 		background-color: $primary-hvr;
 	}
@@ -20,8 +25,8 @@ button {
 }
 .btn-secondary {
 	background-color: $secondary;
-	border: 2px solid $secondary-hvr;
-	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	border: $btn-outline-width solid $secondary-hvr;
+	transition: transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
 	&:hover {
 		background-color: $secondary-hvr;
 	}
@@ -31,8 +36,8 @@ button {
 }
 .btn-success {
 	background-color: $success;
-	border: 2px solid $success-hvr;
-	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	border: $btn-outline-width solid $success-hvr;
+	transition: transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
 	&:hover {
 		background-color: $success-hvr;
 	}
@@ -42,8 +47,8 @@ button {
 }
 .btn-danger {
 	background-color: $danger;
-	border: 2px solid $danger-hvr;
-	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	border: $btn-outline-width solid $danger-hvr;
+	transition: transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
 	&:hover {
 		background-color: $danger-hvr;
 	}
@@ -51,18 +56,82 @@ button {
 		transform: scale(0.95);
 	}
 }
-.btn-outline {
+.btn-outline-dark {
 	background-color: transparent;
-	border: 2px solid $dark-outline;
-	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
+	color: $outline-dark;
+	border: $btn-outline-width solid $outline-dark;
+	transition: color $btn-transition-click-speed ease-in-out, transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
+	&:hover {
+		background-color: $outline-dark-hvr;
+		color: $light;
+	}
 	&:active {
 		transform: scale(0.95);
 	}
 }
-.btn-outline.dark {
-	transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
+.btn-outline-light {
+	background-color: transparent;
+	color: $outline-light;
+	border: $btn-outline-width solid $outline-light;
+	transition: color $btn-transition-click-speed ease-in-out, transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
 	&:hover {
-		background-color: $dark;
+		background-color: $outline-light-hvr;
+		color: $outline-dark;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-outline-primary {
+	background-color: transparent;
+	color: $primary;
+	border: $btn-outline-width solid $primary-hvr;
+	transition: color $btn-transition-click-speed ease-in-out, transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
+	&:hover {
+		background-color: $primary-hvr;
 		color: $light;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-outline-success {
+	background-color: transparent;
+	color: $success;
+	border: $btn-outline-width solid $success-hvr;
+	transition: color $btn-transition-click-speed ease-in-out, transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
+	&:hover {
+		background-color: $success-hvr;
+		color: $light;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+.btn-outline-danger {
+	background-color: transparent;
+	color: $danger;
+	border: $btn-outline-width solid $danger-hvr;
+	transition: color $btn-transition-click-speed ease-in-out, transform $btn-transition-click-speed ease-in-out, background-color $btn-transition-hover-speed ease-in-out;
+	&:hover {
+		background-color: $danger-hvr;
+		color: $light;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
+}
+@media screen and (max-width: 500px) {
+	.btn-primary,
+	.btn-secondary,
+	.btn-success,
+	.btn-danger,
+	.btn-outline-primary,
+	.btn-outline-secondary,
+	.btn-outline-success,
+	.btn-outline-danger,
+	.btn-outline-dark,
+	.btn-outline-light {
+		width: 100%;
 	}
 }
