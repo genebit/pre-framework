@@ -2,8 +2,8 @@
 button {
   overflow: hidden;
   padding: 0.5rem 1.5rem;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
   border-radius: 0;
   margin: 0.25rem;
   text-align: center;
@@ -12,11 +12,11 @@ button {
 
 .btn-primary {
   background-color: #44abdb;
-  border: 2px solid #4598be;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  border: 0.13rem solid #4598be;
+  -webkit-transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
 }
 
 .btn-primary:hover {
@@ -29,16 +29,16 @@ button {
 }
 
 .btn-secondary {
-  background-color: #cccccc;
-  border: 2px solid #9e9a9a;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  background-color: #dbdbdb;
+  border: 0.13rem solid #bbbbbb;
+  -webkit-transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
 }
 
 .btn-secondary:hover {
-  background-color: #9e9a9a;
+  background-color: #bbbbbb;
 }
 
 .btn-secondary:active {
@@ -48,11 +48,11 @@ button {
 
 .btn-success {
   background-color: #519259;
-  border: 2px solid #397940;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  border: 0.13rem solid #397940;
+  -webkit-transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
 }
 
 .btn-success:hover {
@@ -66,11 +66,11 @@ button {
 
 .btn-danger {
   background-color: #d84b32;
-  border: 2px solid #b84430;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  border: 0.13rem solid #b84430;
+  -webkit-transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
 }
 
 .btn-danger:hover {
@@ -82,30 +82,119 @@ button {
           transform: scale(0.95);
 }
 
-.btn-outline {
+.btn-outline-dark {
   background-color: transparent;
-  border: 2px solid #0a0a0a;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  color: #0a0a0a;
+  border: 0.13rem solid #0a0a0a;
+  -webkit-transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
 }
 
-.btn-outline:active {
+.btn-outline-dark:hover {
+  background-color: #0a0a0a;
+  color: #f4eea9;
+}
+
+.btn-outline-dark:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
 
-.btn-outline.dark {
-  -webkit-transition: background-color 200ms ease-in-out, color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
-  transition: transform 35ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out, -webkit-transform 35ms ease-in-out;
+.btn-outline-light {
+  background-color: transparent;
+  color: #f1f1f1;
+  border: 0.13rem solid #f1f1f1;
+  -webkit-transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
 }
 
-.btn-outline.dark:hover {
-  background-color: #0a0a0a;
+.btn-outline-light:hover {
+  background-color: #c7c7c7;
+  color: #0a0a0a;
+}
+
+.btn-outline-light:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #44abdb;
+  border: 0.13rem solid #4598be;
+  -webkit-transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4598be;
   color: #f4eea9;
+}
+
+.btn-outline-primary:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  color: #519259;
+  border: 0.13rem solid #397940;
+  -webkit-transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+}
+
+.btn-outline-success:hover {
+  background-color: #397940;
+  color: #f4eea9;
+}
+
+.btn-outline-success:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #d84b32;
+  border: 0.13rem solid #b84430;
+  -webkit-transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out;
+  transition: color 35ms ease-in-out, transform 35ms ease-in-out, background-color 201ms ease-in-out, -webkit-transform 35ms ease-in-out;
+}
+
+.btn-outline-danger:hover {
+  background-color: #b84430;
+  color: #f4eea9;
+}
+
+.btn-outline-danger:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media screen and (max-width: 500px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-success,
+  .btn-danger,
+  .btn-outline-primary,
+  .btn-outline-secondary,
+  .btn-outline-success,
+  .btn-outline-danger,
+  .btn-outline-dark,
+  .btn-outline-light {
+    width: 100%;
+  }
 }
 
 h1,
@@ -114,12 +203,13 @@ h3,
 h4,
 h5,
 h6 {
+  color: #101222;
   font-weight: 800;
   margin: 0.5rem 0;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.15rem;
 }
 
 h2 {
@@ -143,112 +233,109 @@ h6 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 small {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 blockquote {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-style: italic;
 }
 
-.spacer {
+.spacer-sm {
+  padding: 1rem 0;
+}
+
+.spacer-md {
   padding: 2rem 0;
 }
 
-.text-muted {
-  color: #373737;
+.spacer-lg {
+  padding: 3rem 0;
 }
 
-.card-masonry {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: masonry;
-      grid-template-rows: masonry;
+.text-left {
+  text-align: left;
 }
 
-.card-masonry .card {
-  margin: 1rem 0;
+.text-right {
+  text-align: right;
 }
 
-@media screen and (max-width: 720px) {
-  .card-masonry {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
+.text-center {
+  text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-  .card-masonry {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
+.content-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-deck {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 1rem;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-deck .card {
-  margin: 1rem 0;
+  margin-bottom: 15px;
 }
 
-.card-deck .card-footer {
-  margin-top: 0.5rem;
-  padding: 1rem;
-  float: right;
-}
-
-@media screen and (max-width: 1100px) {
-  .card-deck .card-footer {
-    width: 100%;
+@media (min-width: 800px) {
+  .card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card-deck .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .card-deck {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .card-deck .card {
-    margin: 0;
+  .card-footer {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    float: right;
   }
 }
 
 .card {
   position: relative;
   overflow: hidden;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-  margin: 1rem 1rem;
-  outline: 2px solid #cccccc;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  outline: 2px solid #dbdbdb;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-radius: 0.35rem;
 }
 
 .card .card-img {
@@ -263,7 +350,7 @@ blockquote {
   left: 0;
   top: 0;
   float: left;
-  background-color: #064635;
+  background-color: #44abdb;
 }
 
 .card .card-body {
@@ -288,6 +375,9 @@ blockquote {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -295,13 +385,13 @@ blockquote {
   }
 }
 
-.hero {
+.jumbotron {
   padding: 5rem 2rem;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
-.hero h1 {
+.jumbotron h1 {
   font-size: 3rem;
 }
 
@@ -312,30 +402,31 @@ blockquote {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: #141520;
 }
 
 body {
-  background-color: #fff;
+  background-color: #f4faff;
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.55rem;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #f4eea9;
+  background-color: #e3e8fa;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #f0bb62;
+  background-color: #a0abc5;
   border-radius: 1rem;
 }
 
 ::-moz-selection {
-  background-color: rgba(26, 26, 36, 0.226);
+  background-color: rgba(23, 23, 106, 0.2);
 }
 
 ::selection {
-  background-color: rgba(26, 26, 36, 0.226);
+  background-color: rgba(23, 23, 106, 0.2);
 }
 /*# sourceMappingURL=main.css.map */
