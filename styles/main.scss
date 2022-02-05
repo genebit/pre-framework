@@ -2,9 +2,9 @@
 
 $font: 'Poppins', sans-serif;
 $font-weight-heading: 800;
-$box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+$box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
 
-@import 'colors', 'buttons', 'typo', 'cards', 'components';
+@import 'colors', 'buttons', 'typo', 'cards', 'components', 'nav', 'forms';
 * {
 	margin: 0;
 	padding: 0;

@@ -1,3 +1,7 @@
+$blockquote-accent: $primary;
+$blockquote-stripe-width: 0.5rem;
+$card-background: white;
+
 .card-deck {
 	display: flex;
 	flex-direction: column;
@@ -32,6 +36,7 @@
 	box-shadow: $box-shadow;
 	margin: 1rem;
 	outline: 2px solid $secondary;
+	background-color: $card-background;
 	flex-basis: 100%;
 	border-radius: 0.35rem;
 	.card-img {
@@ -40,27 +45,50 @@
 	}
 	.stripe {
 		position: absolute;
-		width: 7px;
+		width: $blockquote-stripe-width;
 		height: 100%;
 		left: 0;
 		top: 0;
 		float: left;
-		background-color: $primary;
+		background-color: $blockquote-accent;
 	}
 	.card-body {
 		padding: 1rem;
 		flex: 1 1 auto;
 	}
 	.card-footer {
+		width: 100%;
 		margin-top: 0.5rem;
 		padding: 1rem;
-		float: right;
+		display: flex;
+		justify-content: flex-end;
+
 		@media screen and (max-width: 500px) {
 			width: 100%;
-			display: flex;
 			justify-content: space-evenly;
 			align-items: center;
 			flex-direction: column;
 		}
+	}
+}
+.blockquote {
+	position: relative;
+	overflow: hidden;
+	margin: 1rem;
+	flex-basis: 100%;
+
+	.stripe {
+		position: absolute;
+		width: $blockquote-stripe-width;
+		height: 100%;
+		left: 0;
+		top: 0;
+		float: left;
+		background-color: $blockquote-accent;
+		border-radius: 0.35rem;
+	}
+	.blockquote-body {
+		padding: 1rem;
+		flex: 1 1 auto;
 	}
 }
