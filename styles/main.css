@@ -1,4 +1,162 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #101222;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 2.15rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+small {
+  font-size: 0.85rem;
+}
+
+blockquote {
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.spacer-sm {
+  padding: 1rem 0;
+}
+
+.spacer-md {
+  padding: 2rem 0;
+}
+
+.spacer-lg {
+  padding: 3rem 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jumbotron {
+  padding: 5rem 2rem;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+}
+
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.25rem;
+}
+
+.accordion .accordion-card {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
+}
+
+.accordion .accordion-card .accordion-card-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion .accordion-card .accordion-card-header :first-child,
+.accordion .accordion-card .accordion-card-header :last-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.accordion .accordion-card .accordion-card-header :last-child {
+  position: absolute;
+  right: 1rem;
+  color: #141520;
+  font-size: 1.25rem;
+}
+
+.accordion .accordion-card .accordion-card-body {
+  cursor: default;
+  padding: 0 1rem;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
+  transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
+}
+
+.accordion .accordion-card .accordion-card-body.active {
+  overflow-y: scroll;
+  visibility: visible;
+  opacity: 1;
+  height: 100px;
+}
+
 button {
   overflow: hidden;
   padding: 0.5rem 1.5rem;
@@ -197,90 +355,6 @@ button {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #101222;
-  font-weight: 800;
-  margin: 0.5rem 0;
-}
-
-h1 {
-  font-size: 2.15rem;
-}
-
-h2 {
-  font-size: 1.75rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1.15rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 0.95rem;
-}
-
-small {
-  font-size: 0.85rem;
-}
-
-blockquote {
-  font-size: 0.95rem;
-  font-style: italic;
-}
-
-.spacer-sm {
-  padding: 1rem 0;
-}
-
-.spacer-md {
-  padding: 2rem 0;
-}
-
-.spacer-lg {
-  padding: 3rem 0;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.content-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .card-deck {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,80 +487,6 @@ blockquote {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-}
-
-.jumbotron {
-  padding: 5rem 2rem;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
-}
-
-.jumbotron h1 {
-  font-size: 3rem;
-}
-
-.accordion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 0.25rem;
-}
-
-.accordion .accordion-card {
-  position: relative;
-  cursor: pointer;
-  background-color: white;
-  padding: 1rem;
-  width: 100%;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
-}
-
-.accordion .accordion-card .accordion-card-header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.accordion .accordion-card .accordion-card-header :first-child,
-.accordion .accordion-card .accordion-card-header :last-child {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-.accordion .accordion-card .accordion-card-header :last-child {
-  position: absolute;
-  right: 1rem;
-  color: #141520;
-  font-size: 1.25rem;
-}
-
-.accordion .accordion-card .accordion-card-body {
-  cursor: default;
-  padding: 0 1rem;
-  visibility: hidden;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  -webkit-transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
-  transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
-}
-
-.accordion .accordion-card .accordion-card-body.active {
-  overflow-y: scroll;
-  visibility: visible;
-  opacity: 1;
-  height: 100px;
 }
 
 .login-form {
