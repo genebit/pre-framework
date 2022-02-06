@@ -1,7 +1,60 @@
+$accordion-gap: 0.25rem;
+$accordion-card-background: white;
+$accordion-card-icon-color: $default-color;
+$accordion-card-icon-size: 1.25rem;
+$accordion-card-active-height: 100px;
+
 .jumbotron {
 	padding: 5rem 2rem;
 	box-shadow: $box-shadow;
 	h1 {
 		font-size: 3rem;
+	}
+}
+.accordion {
+	display: flex;
+	flex-direction: column;
+	gap: $accordion-gap;
+	.accordion-card {
+		position: relative;
+		cursor: pointer;
+		background-color: $accordion-card-background;
+		padding: 1rem;
+		width: 100%;
+		box-shadow: $box-shadow;
+
+		.accordion-card-header {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			:first-child,
+			:last-child {
+				flex-basis: 100%;
+			}
+			// Move icon to the right
+			:last-child {
+				position: absolute;
+				right: 1rem;
+				color: $accordion-card-icon-color;
+				font-size: $accordion-card-icon-size;
+			}
+		}
+		.accordion-card-body {
+			cursor: default;
+			padding: 0 1rem;
+			visibility: hidden;
+			height: 0;
+			opacity: 0;
+			overflow: hidden;
+			transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
+		}
+		.accordion-card-body.active {
+			overflow-y: scroll;
+			visibility: visible;
+			opacity: 1;
+			height: $accordion-card-active-height;
+		}
 	}
 }
