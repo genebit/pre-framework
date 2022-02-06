@@ -7,6 +7,8 @@
 - [Button](#buttons-types)
 - [Cards](#cards-types)
 - [Card Layout](#card-layouts)
+- [Accordion](#accordion)
+
 ### HTML Boilerplate
 ```
 <!DOCTYPE html>
@@ -162,6 +164,40 @@
     <div class="card-footer">
         <button class="btn-outline-dark">Cancel</button>
         <button class="btn-success">Submit</button>
+    </div>
+</div>
+```
+### Accordion
+![image](assets/md/accordion.png)
+```
+<div class="accordion">
+    <div class="accordion-card">
+        <div class="accordion-card-header">
+            <h6>How much does the project cost?</h6>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="accordion-card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse et excepturi ad. Laudantium perspiciatis similique optio repudiandae iste sequi, ipsum assumenda possimus rerum sapiente recusandae, labore unde officia? Molestias.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse et excepturi ad. Laudantium perspiciatis similique optio repudiandae iste sequi, ipsum assumenda possimus rerum sapiente recusandae, labore unde officia? Molestias.</p>
+        </div>
+    </div>
+    <div class="accordion-card">
+        <div class="accordion-card-header">
+            <h6>How fast is the project?</h6>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="accordion-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <div class="accordion-card">
+        <div class="accordion-card-header">
+            <h6>Who contributed to the project?</h6>
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="accordion-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
 </div>
 ```
