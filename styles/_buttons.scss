@@ -4,6 +4,7 @@ $btn-transition-hover-speed: 201ms;
 $button-border-radius: 0;
 
 button {
+	display: inline-block;
 	overflow: hidden;
 	padding: 0.5rem 1.5rem;
 	box-shadow: $box-shadow;
