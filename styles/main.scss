@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-$font: 'Poppins', sans-serif;
-$font-weight-heading: 800;
-$box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
-
-@import 'colors', 'typo', 'components', 'nav', 'buttons', 'cards', 'forms';
+@import 'variables', 'grid', 'typo', 'components', 'nav', 'buttons', 'cards', 'forms';
 * {
 	margin: 0;
 	padding: 0;
