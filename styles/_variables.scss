@@ -1,6 +1,10 @@
 // Page Variables
 $font: 'Poppins', sans-serif;
-$font-weight-heading: 800;
+$font-weight-800: 800;
+$font-weight-700: 700;
+$font-weight-600: 600;
+$font-weight-500: 500;
+$font-weight-400: 400;
 $box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
 
 // Colors
@@ -11,7 +15,17 @@ $scrollbar-thumb: #a0abc5;
 $scrollbar-track: #e3e8fa;
 
 // Colors
-$light: #f4eea9;
+
+$light-100: #fff;
+$light-200: #eee;
+$light-300: #ddd;
+$light-400: #ccc;
+
+$dark-100: #444444;
+$dark-200: #333333;
+$dark-300: #222222;
+$dark-400: #111111;
+
 $default-color: #141520;
 $heading-color: #101222;
 
@@ -24,6 +38,7 @@ $success: #519259;
 $success-hvr: #397940;
 $danger: #d84b32;
 $danger-hvr: #b84430;
+$accent-color: #44abdb;
 
 // Outline Button
 $outline-dark: #0a0a0a;
@@ -32,16 +47,19 @@ $outline-light: #f1f1f1;
 $outline-light-hvr: #c7c7c7;
 
 // Components
+$jumbotron-background: white;
+
 $accordion-gap: 0.25rem;
 $accordion-card-background: white;
 $accordion-card-icon-color: $default-color;
 $accordion-card-icon-size: 1.25rem;
-$accordion-card-active-height: 100px;
+$accordion-card-active-height: 150px;
 
 // Cards
 $blockquote-accent: $primary;
 $blockquote-stripe-width: 0.5rem;
 $card-background: white;
+$card-border-radius: 1rem;
 
 // Buttons
 $btn-outline-width: 0.13rem;

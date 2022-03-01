@@ -1,6 +1,7 @@
 .jumbotron {
 	padding: 5rem 2rem;
 	box-shadow: $box-shadow;
+	background-color: $jumbotron-background;
 	h1 {
 		font-size: 3rem;
 	}
@@ -42,7 +43,18 @@
 			height: 0;
 			opacity: 0;
 			overflow: hidden;
-			transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
+			transition: all 200ms ease-in-out;
+
+			&::-webkit-scrollbar {
+				width: 0.55rem;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: $scrollbar-track;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $scrollbar-thumb;
+				border-radius: 1rem;
+			}
 		}
 		.accordion-card-body.active {
 			overflow-y: scroll;

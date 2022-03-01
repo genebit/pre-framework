@@ -5,8 +5,17 @@ h4,
 h5,
 h6 {
 	color: $heading-color;
-	font-weight: $font-weight-heading;
 	margin: 0.5rem 0;
+}
+h1,
+h2,
+h3 {
+	font-weight: $font-weight-800;
+}
+h4,
+h5,
+h6 {
+	font-weight: $font-weight-700;
 }
 h1 {
 	font-size: $font-size-h1;
@@ -55,6 +64,12 @@ blockquote {
 .text-center {
 	text-align: center;
 }
+
+// Alignment
+.text-justify {
+	text-align: justify;
+}
+
 .content-center {
 	display: flex;
 	justify-content: center;

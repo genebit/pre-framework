@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* ------------------- GRID SYSTEM ----------------------------------- */
 .container {
   width: 90%;
@@ -155,8 +155,19 @@ h4,
 h5,
 h6 {
   color: #101222;
-  font-weight: 800;
   margin: 0.5rem 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 h1 {
@@ -220,6 +231,10 @@ blockquote {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .content-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +251,7 @@ blockquote {
   padding: 5rem 2rem;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
           box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
+  background-color: white;
 }
 
 .jumbotron h1 {
@@ -295,21 +311,33 @@ blockquote {
   height: 0;
   opacity: 0;
   overflow: hidden;
-  -webkit-transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
-  transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion .accordion-card .accordion-card-body::-webkit-scrollbar {
+  width: 0.55rem;
+}
+
+.accordion .accordion-card .accordion-card-body::-webkit-scrollbar-track {
+  background-color: #e3e8fa;
+}
+
+.accordion .accordion-card .accordion-card-body::-webkit-scrollbar-thumb {
+  background-color: #a0abc5;
+  border-radius: 1rem;
 }
 
 .accordion .accordion-card .accordion-card-body.active {
   overflow-y: scroll;
   visibility: visible;
   opacity: 1;
-  height: 100px;
+  height: 150px;
 }
 
 button {
   display: inline-block;
-  overflow: hidden;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
           box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
   border-radius: 0;
@@ -402,7 +430,7 @@ button {
 
 .btn-outline-dark:hover {
   background-color: #0a0a0a;
-  color: #f4eea9;
+  color: #fff;
 }
 
 .btn-outline-dark:active {
@@ -442,7 +470,7 @@ button {
 
 .btn-outline-primary:hover {
   background-color: #4598be;
-  color: #f4eea9;
+  color: #fff;
 }
 
 .btn-outline-primary:active {
@@ -462,7 +490,7 @@ button {
 
 .btn-outline-success:hover {
   background-color: #397940;
-  color: #f4eea9;
+  color: #fff;
 }
 
 .btn-outline-success:active {
@@ -482,7 +510,7 @@ button {
 
 .btn-outline-danger:hover {
   background-color: #b84430;
-  color: #f4eea9;
+  color: #fff;
 }
 
 .btn-outline-danger:active {
@@ -543,6 +571,24 @@ button {
     margin-bottom: 0;
     margin-left: 15px;
   }
+  .card-deck .card .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-deck .card .card-footer * {
+    width: 100%;
+  }
   .card-footer {
     margin-top: 0.5rem;
     padding: 1rem;
@@ -556,26 +602,15 @@ button {
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
           box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
   margin: 1rem;
-  outline: 2px solid #dbdbdb;
   background-color: white;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  border-radius: 0.35rem;
+  border-radius: 1rem;
 }
 
 .card .card-img {
   display: block;
   width: 100%;
-}
-
-.card .stripe {
-  position: absolute;
-  width: 0.5rem;
-  height: 100%;
-  left: 0;
-  top: 0;
-  float: left;
-  background-color: #44abdb;
 }
 
 .card .card-body {
@@ -614,22 +649,9 @@ button {
 }
 
 .blockquote {
-  position: relative;
-  overflow: hidden;
   margin: 1rem;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-.blockquote .stripe {
-  position: absolute;
-  width: 0.5rem;
-  height: 100%;
-  left: 0;
-  top: 0;
-  float: left;
-  background-color: #44abdb;
-  border-radius: 0.35rem;
+  -webkit-box-shadow: -7px 0 0 0 #44abdb;
+          box-shadow: -7px 0 0 0 #44abdb;
 }
 
 .blockquote .blockquote-body {
@@ -658,7 +680,7 @@ button {
 .login-form textarea {
   height: 2.25rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
+  border-radius: 0;
   padding: 1rem;
   -webkit-transition: outline 200ms;
   transition: outline 200ms;
