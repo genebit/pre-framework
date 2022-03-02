@@ -21,6 +21,13 @@ body {
 		border-radius: 1rem;
 	}
 }
+hr {
+	width: 50%;
+	margin: auto;
+	// height: 0.25rem;
+	// background-color: $default-color;
+	border-radius: 1.5rem;
+}
 ::selection {
 	background-color: $selection-color;
 }
