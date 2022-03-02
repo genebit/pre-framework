@@ -337,11 +337,11 @@ blockquote {
 
 button {
   display: inline-block;
+  overflow: hidden;
   padding: 0.5rem 2rem;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
           box-shadow: 0 3px 5px 0 rgba(0, 0, 200, 0.2);
   border-radius: 0;
-  margin: 0.25rem;
   text-align: center;
   cursor: pointer;
 }
@@ -679,7 +679,7 @@ input[type='date'],
 input[type='password'],
 input[type='number'],
 textarea {
-  height: 2.25rem;
+  height: 2.55rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 0;
   padding: 1rem;
